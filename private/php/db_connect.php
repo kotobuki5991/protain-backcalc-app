@@ -3,13 +3,6 @@ require_once(__DIR__ . '/token.php');
 session_start();
 class db_connect {
 
-
-    private $hostname = null;
-    private $dbname = null;
-    private $password = null;
-    private $port = null;
-    private $user = null;
-
     public $results = null;
     public $max_of_column = null;
 
@@ -17,18 +10,17 @@ class db_connect {
     {
          // トークンをセット
         token::create();   
-
-        $hostname=getenv('DB_HOSTNAME');
-        $dbname=getenv('DB_NAME');
-        $password=getenv('DB_PASSWORD');
-        $port=getenv('DB_PORT');
-        $user=getenv('DB_USERNAME');
     }
 
     public function exec_sql (){
 
         try {
 
+            $hostname=getenv('DB_HOSTNAME');
+            $dbname=getenv('DB_NAME');
+            $password=getenv('DB_PASSWORD');
+            $port=getenv('DB_PORT');
+            $user=getenv('DB_USERNAME');
             
             // DB接続設定
             // $dsn = "mysql:host=mysql:3306;dbname=nutr_fuku_db;";
