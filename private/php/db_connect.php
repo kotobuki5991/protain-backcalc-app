@@ -27,7 +27,7 @@ class db_connect {
             // $pdo = new PDO($dsn, 'nutr_fuku_usr', 'nutr_29_db_pass');
 
             // heroku本番環境用
-            $dsn = "mysql:host={$hostname}:{$port};dbname={$dbname};";
+            $dsn = "mysql:host={$hostname}:{$port};dbname={$dbname};charset=utf8mb4";
             $pdo = new PDO($dsn, $user, $password);
             
             
