@@ -31,6 +31,7 @@ class db_connect {
             $pdo = new PDO($dsn, $user, $password);
             
             
+            
             // もしpost送信かつ入力が空文字出ない場合
             if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['protain-amount'] != '') {
                 
