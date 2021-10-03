@@ -3,11 +3,12 @@ require_once(__DIR__ . '/token.php');
 session_start();
 class db_connect {
 
-    private $hostname=getenv('DB_HOSTNAME');
-    private $dbname=getenv('DB_NAME');
-    private $password=getenv('DB_PASSWORD');
-    private $port=getenv('DB_PORT');
-    private $user=getenv('DB_USERNAME');
+
+    private $hostname = null;
+    private $dbname = null;
+    private $password = null;
+    private $port = null;
+    private $user = null;
 
     public $results = null;
     public $max_of_column = null;
@@ -16,6 +17,12 @@ class db_connect {
     {
          // トークンをセット
         token::create();   
+
+        $hostname=getenv('DB_HOSTNAME');
+        $dbname=getenv('DB_NAME');
+        $password=getenv('DB_PASSWORD');
+        $port=getenv('DB_PORT');
+        $user=getenv('DB_USERNAME');
     }
 
     public function exec_sql (){
