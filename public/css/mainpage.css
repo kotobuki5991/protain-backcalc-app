@@ -1,0 +1,102 @@
+
+img.logo{
+  width: 50px;
+  height: 50px;
+}
+
+div.header_color{
+  background-color: #FFAD90;
+}
+
+
+nav.navigation-mainpage{
+  margin-right: 0px;
+}
+
+/* ------------------------------------------------------------------------------
+	検索ボックス
+-------------------------------------------------------------------------------*/
+div.input-grams{
+  margin: auto;
+}
+
+form.protain-input-form{
+  display: flex;
+}
+
+input.form-control-input{
+  color: black;
+  height: 30px;
+  width: 200px;
+}
+
+div.header-content{
+  display: flex;
+}
+
+select.select-sort{
+  margin-left: 40px;
+  width: auto;
+  color: black;
+
+  /* background-image: linear-gradient(45deg, transparent 50%, rgba(0,0,0,0.4) 50%),  linear-gradient(135deg, rgba(0,0,0,0.4) 50%, transparent 50%);
+  background-size: 5px 5px, 5px 5px;
+  background-position: calc(100% - 15px) 50%, calc(100% - 10px) 50%;
+  background-repeat: no-repeat; */
+}
+
+
+/* ------------------------------------------------------------------------------
+	検索結果
+-------------------------------------------------------------------------------*/
+div.search_rasult{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 5%;
+  margin-left: 5%;
+  display: flex;
+  width: 90%;
+  /* align-items: center; */
+}
+
+div.food_info{
+  width: 20%;
+  height: 120px;
+}
+
+div.food_name_img_block{
+  height: 120px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: auto;
+}
+
+div.nutrition_chart{
+  width: 80%;
+  display: flex;
+}
+
+img.imagesize{
+  height: 72px;
+  width: 110px; 
+}
+
+canvas.my_chart{
+  padding-left: 0;
+  padding-right: 0;
+  margin: auto;
+  margin-top: auto;
+  margin-bottom: 0;
+  display: block;
+}
+
+div.parent-my_chart{
+  height: 100%;
+  width: 25%;
+}
+
+
+h5.display-grams{
+  text-align: center;
+}
+
