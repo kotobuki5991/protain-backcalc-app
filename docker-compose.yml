@@ -25,10 +25,10 @@ services:
     environment:
       MYSQL_ROOT_USER: root
       # Rootユーザーを、パスワードなしでMySQLへのログインを許可します。
-      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      # MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
       # MySQLのRootユーザーのパスワードを設定する場合は、
       # MYSQL_ALLOW_EMPTY_PASSWORDをコメントアウトし、MYSQL_ROOT_PASSWORDでパスワードを指定します。
-      # MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: nutr_fuku_root
       # Database名称の指定
       MYSQL_DATABASE: nutr_fuku_db
       # MYSQL_DATABASE: test_db

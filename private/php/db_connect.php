@@ -3,6 +3,12 @@ require_once(__DIR__ . '/token.php');
 session_start();
 class db_connect {
 
+    private $hostname=getenv('DB_HOSTNAME');
+    private $dbname=getenv('DB_NAME');
+    private $password=getenv('DB_PASSWORD');
+    private $port=getenv('DB_PORT');
+    private $user=getenv('DB_USERNAME');
+
     public $results = null;
     public $max_of_column = null;
 
@@ -18,8 +24,12 @@ class db_connect {
 
             
             // DB接続設定
-            $dsn = "mysql:host=mysql:3306;dbname=nutr_fuku_db;";
-            $pdo = new PDO($dsn, 'nutr_fuku_usr', 'nutr_29_db_pass');
+            // $dsn = "mysql:host=mysql:3306;dbname=nutr_fuku_db;";
+            // $pdo = new PDO($dsn, 'nutr_fuku_usr', 'nutr_29_db_pass');
+
+            // heroku本番環境用
+            $dsn = "mysql:host={$hostname}:{$port};dbname={$dbname};";
+            $pdo = new PDO($dsn, $user, $password);
             
             
             // もしpost送信かつ入力が空文字出ない場合

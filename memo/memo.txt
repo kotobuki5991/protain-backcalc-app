@@ -57,3 +57,11 @@ FROM food_nutrition;
 enterキーでフォーム送信した際にonclickが反応せずバリデーションを通過しない
 ⇨buttonタグではenterキー押下時にクリックイベントは発生しない？
 
+
+
+heroku config:add DB_NAME='heroku_4ac870560b1fde5'
+heroku config:add DB_USERNAME='b67d71e8ff1da6'
+heroku config:add DB_PASSWORD='fc07dfe1'
+heroku config:add DB_HOSTNAME='us-cdbr-east-04.cleardb.com'
+heroku config:add DB_PORT='3306'
+heroku config:add DATABASE_URL='mysql://b67d71e8ff1da6:fc07dfe1@us-cdbr-east-04.cleardb.com/heroku_4ac870560b1fde5?reconnect=true'
