@@ -15,6 +15,9 @@ class db_connect {
     public function exec_sql (){
 
         try {
+            // 開発環境DB接続設定
+            // $dsn = "mysql:host=mysql:3306;dbname=nutr_fuku_db;";
+            // $pdo = new PDO($dsn, 'nutr_fuku_usr', 'nutr_29_db_pass');
 
             $hostname=getenv('DB_HOSTNAME');
             $dbname=getenv('DB_NAME');
@@ -22,9 +25,6 @@ class db_connect {
             $port=getenv('DB_PORT');
             $user=getenv('DB_USERNAME');
             
-            // DB接続設定
-            // $dsn = "mysql:host=mysql:3306;dbname=nutr_fuku_db;";
-            // $pdo = new PDO($dsn, 'nutr_fuku_usr', 'nutr_29_db_pass');
 
             // heroku本番環境用
             $dsn = "mysql:host={$hostname}:{$port};dbname={$dbname};charset=utf8mb4";
