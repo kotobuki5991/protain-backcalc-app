@@ -16,19 +16,19 @@ class db_connect {
 
         try {
             // 開発環境DB接続設定
-            // $dsn = "mysql:host=mysql:3306;dbname=nutr_fuku_db;";
-            // $pdo = new PDO($dsn, 'nutr_fuku_usr', 'nutr_29_db_pass');
+            $dsn = "mysql:host=mysql:3306;dbname=nutr_fuku_db;";
+            $pdo = new PDO($dsn, 'nutr_fuku_usr', 'nutr_29_db_pass');
 
-            $hostname=getenv('DB_HOSTNAME');
-            $dbname=getenv('DB_NAME');
-            $password=getenv('DB_PASSWORD');
-            $port=getenv('DB_PORT');
-            $user=getenv('DB_USERNAME');
+            // $hostname=getenv('DB_HOSTNAME');
+            // $dbname=getenv('DB_NAME');
+            // $password=getenv('DB_PASSWORD');
+            // $port=getenv('DB_PORT');
+            // $user=getenv('DB_USERNAME');
             
 
             // heroku本番環境用
-            $dsn = "mysql:host={$hostname}:{$port};dbname={$dbname};charset=utf8mb4";
-            $pdo = new PDO($dsn, $user, $password);
+            // $dsn = "mysql:host={$hostname}:{$port};dbname={$dbname};charset=utf8mb4";
+            // $pdo = new PDO($dsn, $user, $password);
             
             
             
