@@ -20,12 +20,7 @@ $json_max_of_column = trim(
 
 ?>
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="">
-<!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
@@ -75,15 +70,6 @@ $json_max_of_column = trim(
           </form>
         </div>
 
-
-        <!-- <nav class="navigation navigation-mainpage" role="navigation">
-          <ul class="primary-nav">
-            <li><a href="about.html">About me</a></li>
-            <li><a href="contact.php">Contact</a></li>
-            <li><a href="#">External Link</a></li>
-          </ul>
-        </nav>
-        <a href="#" class="nav-toggle">Menu<span></span></a> -->
       </div>
     </header>
     <!--header navigation -->
