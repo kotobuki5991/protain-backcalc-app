@@ -5,8 +5,7 @@ var max_protain  = Math.round(parseFloat(selected_max_of_column["max_protain"]) 
 var max_fat      = Math.round(parseFloat(selected_max_of_column["max_fat"]) * 10) /10;
 var max_carb     = Math.round(parseFloat(selected_max_of_column["max_carb"]) * 10) /10;
 
-///////////現状最終的なfood_select_indexが1のためindex0のグラフが表示されない
-// 件数分表示する必要がある
+
 //SELECTの件数分ループ（結果のindex分）
 //グラフ描画関数を呼び出す
 for (let i = 0; i <= food_select_index; i++) {
@@ -15,12 +14,12 @@ for (let i = 0; i <= food_select_index; i++) {
 
 
 
-//引数としてselect結果のindexを受け取り、グラフを描画する関数
+//引数としてselect結果のindexを受け取り、グラフを描画する
 function displayChart(index) {
 
     // index.phpからjson形式の栄養成分の情報を受け取り元の形式（連想配列）に戻す
     var json_nutrition   = document.getElementById(index);
-    // console.log(json_nutrition);
+    
     // 受け取った食材のデータをjsオブジェクトに変換する
     var parsed_nutrition = JSON.parse(json_nutrition.dataset.pfc);
 
