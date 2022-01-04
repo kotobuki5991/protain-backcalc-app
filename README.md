@@ -9,7 +9,7 @@ Docker(環境構築)/PHP7.4.22/mysql5.7
 JavaScript/HTML/CSS/heroku
 
 ## 開発の目的
-既存サービスの　カロリーSlism(https://calorie.slism.jp/calorie/)を使用する中で  
+既存サービスの　カロリーSlism(https://calorie.slism.jp/calorie/) を使用する中で  
 不便に感じた部分を改善し、自身で活用したかったため。
 
 ### ・不便に感じた点
