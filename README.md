@@ -6,7 +6,7 @@ https://protain-backcalc-app.herokuapp.com/
 
 ## 使用技術
 Docker(環境構築)/PHP7.4.22/mysql5.7  
-JavaScript/HTML/CSS/heroku
+JavaScript/HTML/CSS/BootStrap/heroku
 
 ## 開発の目的
 既存サービスの　カロリーSlism(https://calorie.slism.jp/calorie/) を使用する中で  
